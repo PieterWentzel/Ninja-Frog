@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://c2t1n25fhfl3"]
+
+[ext_resource type="Texture2D" uid="uid://daiob7gib2f8p" path="res://Items/Checkpoints/End/End (Idle).png" id="1_v8ea0"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1cqf5"]
+radius = 88.1419
+
+[node name="EndTrophy" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(3, 3)
+texture = ExtResource("1_v8ea0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 22)
+shape = SubResource("CircleShape2D_1cqf5")
