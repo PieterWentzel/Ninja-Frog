@@ -1,6 +1,6 @@
 [gd_scene load_steps=22 format=3 uid="uid://qfc8bbkuhdf2"]
 
-[ext_resource type="Script" path="res://Scenes/collectable_cherry.gd" id="1_8kbmk"]
+[ext_resource type="Script" path="res://Scripts/collectable_cherry.gd" id="1_73otc"]
 [ext_resource type="Texture2D" uid="uid://cp1ipkdcok82c" path="res://Items/Fruits/Cherries.png" id="1_oq14o"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ywkqu"]
@@ -135,7 +135,7 @@ radius = 24.0208
 
 [node name="Collectable_Cherry" type="Area2D"]
 position = Vector2(90, 38)
-script = ExtResource("1_8kbmk")
+script = ExtResource("1_73otc")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
