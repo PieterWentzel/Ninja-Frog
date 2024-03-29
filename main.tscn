@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://66hay5ris0f8" path="res://Terrain/Terrain (16x16).png" id="2_1d4s8"]
 [ext_resource type="PackedScene" uid="uid://rcxpgtutubo" path="res://Scenes/Main_Character.tscn" id="3_kr77v"]
 [ext_resource type="PackedScene" uid="uid://qfc8bbkuhdf2" path="res://Scenes/collectable_cherry.tscn" id="4_o2lw3"]
-[ext_resource type="Script" path="res://game_manager.gd" id="5_g1fbr"]
+[ext_resource type="Script" path="res://Scripts/game_manager.gd" id="5_g1fbr"]
 [ext_resource type="PackedScene" uid="uid://c2t1n25fhfl3" path="res://Scenes/end_trophy.tscn" id="6_x63yt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lxwyc"]
