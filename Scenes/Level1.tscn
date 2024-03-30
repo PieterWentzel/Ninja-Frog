@@ -1,11 +1,13 @@
-[gd_scene load_steps=9 format=3 uid="uid://de2cmhe3owd42"]
+[gd_scene load_steps=11 format=3 uid="uid://de2cmhe3owd42"]
 
 [ext_resource type="Texture2D" uid="uid://dcau7ap807uqf" path="res://Background/Green.png" id="1_y7x5f"]
 [ext_resource type="Texture2D" uid="uid://66hay5ris0f8" path="res://Terrain/Terrain (16x16).png" id="2_1d4s8"]
 [ext_resource type="PackedScene" uid="uid://rcxpgtutubo" path="res://Scenes/Main_Character.tscn" id="3_kr77v"]
 [ext_resource type="PackedScene" uid="uid://qfc8bbkuhdf2" path="res://Scenes/collectable_cherry.tscn" id="4_o2lw3"]
 [ext_resource type="Script" path="res://Scripts/game_manager.gd" id="5_g1fbr"]
+[ext_resource type="PackedScene" uid="uid://cy7l68kittp7f" path="res://finish.tscn" id="7_0q4je"]
 [ext_resource type="AudioStream" uid="uid://c6qufsy7p5tng" path="res://Sound/Music/Magical Forest.wav" id="7_3hog3"]
+[ext_resource type="PackedScene" uid="uid://202lvil1r653" path="res://Scenes/Level2.tscn" id="8_2fwjw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lxwyc"]
 texture = ExtResource("2_1d4s8")
@@ -521,3 +523,26 @@ position = Vector2(936, 122)
 
 [node name="Collectable_Cherry4" parent="SceneObjects/Collectables_Group" instance=ExtResource("4_o2lw3")]
 position = Vector2(626, 412)
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="UI"]
+offset_left = 55.0
+offset_top = 57.0
+offset_right = 305.0
+offset_bottom = 158.0
+
+[node name="Points Lable" type="Label" parent="UI/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Points: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Finish" parent="." instance=ExtResource("7_0q4je")]
+position = Vector2(2137, 301)
+target_level = ExtResource("8_2fwjw")
